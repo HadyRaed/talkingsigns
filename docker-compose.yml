@@ -1,0 +1,9 @@
+version: "3"
+services: 
+    server:
+        container_name: takingsigns
+        build: .
+        ports: 
+            - "3000:3000"
+        volumes:
+            - "./pictures:/src/pictures"
