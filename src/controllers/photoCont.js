@@ -4,6 +4,8 @@ const uploadMessagePicture = async (req, res) => {
     try {
        
 
+
+        console.log(req)
             const { stdout, stderr } = await exec('python ./src/test.py');
             console.log(stdout)
             return res.status(200).send({ message: 'done' });//stdout
