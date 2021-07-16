@@ -4,6 +4,6 @@ services:
         container_name: takingsigns
         build: .
         ports: 
-            - "80:80"
+            - "2000:80"
         volumes:
             - "./pictures:/src/pictures"
